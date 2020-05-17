@@ -1,0 +1,62 @@
+Para criar a máquina virtual, usei o Virtual Box 6.1, que pode ser baixado nesse link: https://www.virtualbox.org/wiki/Downloads
+
+O Sistema Operacional que eu escolhi foi o XUbuntu, que já tem o Python instalado. Como eu uso o Python 3, preferi usar a distro mais atual, que é a 20. Download em https://xubuntu.org/news/xubuntu-20-04-released/ 
+Com os downloads feitos, é só fazer a instalação do VirtualBox e criar a máquina virtual.
+Eu usei um HD parado aqui para colocar a VM e também criar um repositório de arquivos para mim.
+Apesar de eu poder optar por colocar mais memória na VM, preferi manter ela um pouco mais enxuta para poder manter a portabilidade caso eu faça um pendrive com ela.
+
+Configuração da VM: 2 Core, 2 Gb de RAM, 140 Gb de HD Virtual.
+
+Após a criação da VM e instalação do SO Xubuntu, inicia-se o processo de configuração do Sistema.
+
+Verificar versão do python instalada (caso necessite, é só configurar para ficar como python ao invés de python3)
+Verificar se o pip está instalado (não deve estar)
+
+Abrir o terminal:
+
+--> Instalar o pip
+$ sudo apt install python3-pip 
+
+--> Configura o pip3 para ser o pip primário
+$ alias pip3=pip
+
+--> Instalar o curl pelo terminal
+$ sudo apt install curl
+
+--> Instalação do Anaconda
+Cerifica o link no site:
+https://www.anaconda.com/distribution/
+
+Verificar  o link de download da versao do anaconda e colar o link em algum bloco de notas da vida, onde poderá ser pego depois.
+
+--> Entra na pasta tmp
+$ cmd /tmp
+
+--> Busca o arquivo para ser instalado
+$ curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh 
+
+--> Instala o Anaconda
+$ bash Anaconda3-2020.02-Linux-x86_64.sh 
+
+--> Testar com
+$ conda list
+
+Finalizando Primeira parte da Configuração
+
+--> Instalar requests (para poder acessar páginas web)
+$ pip install requests
+
+--> Instalar beautiful soup (facilita mining e hacking em páginas web)
+$ pip install beautifulsoup4
+
+Instalei também a IDE que eu gosto de usar
+
+--> Instalar visual studio code
+
+--> instalar snap
+$ sudo apt-get install snapd snapd-xdg-open
+
+--> Instala o VSCode
+$ snap install code --classic
+
+No VSCode, instala a extensão Python da Microsoft.
