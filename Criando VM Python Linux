@@ -10,6 +10,11 @@ Configuração da VM: 2 Core, 2 Gb de RAM, 140 Gb de HD Virtual.
 Após a criação da VM e instalação do SO Xubuntu, inicia-se o processo de configuração do Sistema.
 
 Verificar versão do python instalada (caso necessite, é só configurar para ficar como python ao invés de python3)
+
+Passo 1: Remover o antigo link $ sudo rm /usr/bin/python
+
+Passo 2: Criando o novo link apontando para Python3 $ sudo ln -s python3 /usr/bin/python
+
 Verificar se o pip está instalado (não deve estar)
 
 Abrir o terminal:
