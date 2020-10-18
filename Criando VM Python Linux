@@ -65,3 +65,18 @@ $ sudo apt-get install snapd snapd-xdg-open
 $ snap install code --classic
 
 No VSCode, instala a extensão Python da Microsoft.
+
+Para instalar o Kivy
+Desisntalar o python 3 do xubuntu:
+$ sudo apt-get remove python3
+Instalar o python 3.6:
+
+$ sudo apt update
+$ sudo apt install python3.6
+$ sudo apt install python3.6-dev
+$ sudo apt install python3.6-venv
+$ wget https://bootstrap.pypa.io/get-pip.py
+$ sudo python3.6 get-pip.py
+
+Instalar o kivy:
+$ pip install kivy
