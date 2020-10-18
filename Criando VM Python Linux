@@ -80,3 +80,8 @@ $ sudo python3.6 get-pip.py
 
 Instalar o kivy:
 $ pip install kivy
+$pip install kivymd
+
+Para rodar o kivy no vsc, precisa configurar o workspace para que ele rode pelo python3.6
+
+Entâo entre em File/Preferences/Settins, entre no workspace e digite pyton: python path e digite python3.6
